@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Game</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f54fb823be.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header1">
+            <h1>Clicker Game</h1>
+            <span class="click-count">0 clicks</span>
+        </div>
+        <div class="header2">
+                <label>Health</label>
+                <input type="range" min="0" max="100" step="1" value="0" name="health-bar">
+        </div>
+    </header>
+    <main>
+        <section class="menu-section">
+            <div class="upper-options">
+                <button class="click-upgrades" onClick="clickUpgradesScreen()">C</button>
+            </div>
+            <div class="stats">
+                <span class="total-damage-by-click">Total Click Damage: 1</span>
+                <!--<span class="total-damage-by-upgrade">Total Upgrade Damage:</span>--> <!-- This Not Yet -->
+            </div>
+            <div class="clicks-incremental-options">
+                <button class="incr-button plus-one">10</button>
+                <button class="incr-button plus-two">100</button>
+                <button class="incr-button plus-three">1000</button>
+                <button class="incr-button plus-four">10000</button>
+            </div>
+        </section>
+        <section class="click-section">
+            <div class="click"></div>
+        </section>
+    </main>
+    <script defer src="script.js"></script>
+</body>
+
+</html>
